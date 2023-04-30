@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Send+Flowers&family=Source+Sans+Pro:wght@300&family=Whisper&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ------------------NAVIGATION----------------------- */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.logo-delice {
+  position: absolute;
+  top: -15px;
+  width: 120px;
+}
+
+nav a {
+  color: #c79851;
+  margin-left: 40px;
+  font-size: calc(1.5vw + 0.8rem);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #487276;
+}
+
+.header-image {
+  height: 60vh;
+  background: url(./images/Zaia-Cover-1000x600.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ----------------------------------------------------------- */
+
+.filter {
+  position: relative;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 60vh;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-family: "Send Flowers", cursive;
+  font-size: calc(7vw + 2rem);
+  letter-spacing: 1px;
+  color: #c79851;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black,
+    5px 5px black, 6px 6px black;
+}
+
+.header-image button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  font-size: 24px;
+  color: white;
+  background: #c79851;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+}
+
+.header-image button:hover {
+  background: white;
+  color: #c79851;
+}
+
+.banniere,
+.banniere2 {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.text {
+  padding: 20px;
+  color: #333;
+}
+
+.plat {
+  width: 500px;
+  object-fit: cover;
+}
+
+h2 {
+  font-family: "Send Flowers", cursive;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 20px 0;
+  font-size: calc(2vw + 1rem);
+  color: #c79851;
+}
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 40px 0;
+  font-size: 1.8rem;
+  color: #c79851;
+}
+
+.motChef {
+  line-height: 1.6;
+}
+
+/* ----------------------CARTES MENUS ------------------------- */
+
+article {
+  margin: 60px 0;
+}
+
+.card-entrees,
+.card-plats,
+.card-desserts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-image: linear-gradient(
+      164deg,
+      rgba(49, 49, 49, 0.15) 0%,
+      transparent 44%
+    ),
+    linear-gradient(97deg, rgba(49, 49, 49, 0.15) 0%, transparent 40%),
+    linear-gradient(265deg, rgba(49, 49, 49, 0.15) 0%, transparent 30%),
+    linear-gradient(316deg, rgba(49, 49, 49, 0.15) 0%, transparent 78%),
+    repeating-linear-gradient(
+      38deg,
+      rgba(140, 140, 140, 0.1) 0px,
+      transparent 3px
+    ),
+    repeating-linear-gradient(
+      100deg,
+      rgba(140, 140, 140, 0.1) 0px,
+      transparent 3px
+    ),
+    linear-gradient(90deg, rgb(241, 194, 117), rgb(241, 194, 117));
+  border-radius: 40px 0 10px 0;
+  width: 340px;
+  height: 450px;
+  padding: 10px;
+}
+
+.price {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.card p {
+  font-family: "Send Flowers", cursive;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ---------------------section parallax------------------ */
+
+.parallax {
+  background-image: url(./images/Horto-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-txt {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  font-size: calc(2vw + 1.5rem);
+  color: #fff;
+  text-align: center;
+}
+
+/* @media screen and (max-width: 550px) {
+  .parallax-txt {
+    font-size: 50px;
+  }
+} */
+
+/* ---------------------FORMULAIRE---------------- */
+
+.formulaire {
+  max-width: 100%;
+  height: auto;
+  background: #c79851;
+  padding: 20px;
+}
+form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.formulaire h2 {
+  color: white;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+.formulaire label {
+  color: white;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.formulaire input {
+  margin-bottom: 20px;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  width: 450px;
+}
+
+.formulaire ::placeholder {
+  font-size: 20px;
+  text-align: center;
+}
+
+.formulaire button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #c79851;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ------------------FOOTER----------------------------------- */
+
+footer {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  background: #c79851;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  width: 200px;
+}
+
+footer .icon-social {
+  color: #c79851;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+footer .phone {
+  color: #487276;
+  font-size: 1.4rem;
+}
+
+footer .email {
+  color: #487276;
+  font-size: 1.1rem;
+}
+
+footer .email > a {
+  color: #487276;
+  text-decoration: none;
+}
+
+footer h3,
+p {
+  margin-bottom: 20px;
+}
+
+footer p {
+  color: #333;
+  padding: 0 20px;
+  line-height: 30px;
+}
+
+.box-footer {
+  text-align: center;
+  color: white;
+  width: 366.66px;
+  height: auto;
+}
+
+footer .download-menu {
+  text-decoration: none;
+  color: #487276;
+}
+
+.footer-nav {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-down-footer ul {
+  display: flex;
+  gap: 15px;
+}
+
+.navigation-down-footer ul li {
+  list-style: none;
+}
+
+.navigation-down-footer ul li a {
+  color: #666;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.navigation-down-footer ul li a:hover {
+  color: #c79851;
+  padding-bottom: 5px;
+}
+
+.footer-nav .copyright {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* ---------------------RESPONSIVE------------------------- */
+
+@media (max-width: 900px) {
+  .banniere {
+    flex-direction: column-reverse;
+  }
+  .banniere2 {
+    flex-direction: column;
+  }
+  .text {
+    width: 100%;
+    padding: 20px;
+  }
+  .plat {
+    width: 270px;
+  }
+  button {
+    font-size: 18px;
+  }
+  .formulaire input {
+    width: 200px;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-nav {
+    flex-direction: column;
+  }
+  .navigation-down-footer ul {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .logo-delice {
+    top: 0px;
+    width: 50px;
+  }
+}
